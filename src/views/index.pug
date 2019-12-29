@@ -1,0 +1,37 @@
+//-
+  @Author: Laurent Vergerolle <laurent>
+  @Date:   2019-12-29T14:17:51-04:00
+  @Email:  laurent@ipeos.com
+  @Last modified by:   laurent
+  @Last modified time: 2019-12-29T17:59:50-04:00
+  @License: GPLv3
+extends extends/base.pug
+
+block head
+  title Coordonnées GPS d'adresses
+  
+block header
+  div.container
+    h1 Coordonnées GPS d'adresses
+
+block content
+  div.container
+    div#address-search
+      div.form-inline.mb-3
+        div.form-group.mr-2
+          label(for="address").px-3 Adresse
+          input(v-model="address", placeholder="Saisissez une adresse", v-on:keyup.enter='search')#address.form-control
+        button(v-on:click='search').btn.btn-primary
+          span.fas.fa-search
+          | &nbsp;Chercher
+      
+      div.card
+        div.card-body
+          p Adresse saisie : {{ address }}
+          div(v-for='addr in addresses').media
+            div.media-body
+              p.h5.mb-0 {{ addr.properties.label }}
+              p Coordonnées GPS :
+                span.d-inline-block.ml-3 lat: {{ addr.geometry.coordinates[0] }} - lng: {{ addr.geometry.coordinates[1] }}
+        
+        

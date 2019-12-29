@@ -1,7 +1,7 @@
 node_modules/
-www/
 bower_components/
 .sass-cache/
+src/css
 *.orig
 *.bak
 *.BAK
@@ -9,5 +9,6 @@ bower_components/
 *.TMP
 *.sw*
 *.old
+*-lock.json
 *.DS_Store
 Thumbs.db
