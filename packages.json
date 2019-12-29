@@ -1,0 +1,19 @@
+{
+  "name": "template-vue-widgets",
+  "version": "0.0.1",
+  "description": "Test de widgets fait avec vue.js",
+  "main": "www/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psychoz971/template-vue-widgets"
+  },
+  "keywords": [
+    "vue.js",
+    "widgets",
+  ],
+  "author": "Laurent Vergerolle",
+  "license": "GPL-3.0"
+}

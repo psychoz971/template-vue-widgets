@@ -1,0 +1,13 @@
+node_modules/
+www/
+bower_components/
+.sass-cache/
+*.orig
+*.bak
+*.BAK
+*.tmp
+*.TMP
+*.sw*
+*.old
+*.DS_Store
+Thumbs.db
